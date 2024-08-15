@@ -20,10 +20,30 @@ const ProjectCard = () => {
             "I am a millennial, so it goes without saying that I grew up with Harry Potter. The user takes a quiz, with answers awarding points to each of the four houses. At the end of the quiz, the winning house is revealed and changes dynamically."
         ],
         skills: [
-            [<RiNextjsFill size={ICON_SIZE} />, <FaReact size={ICON_SIZE} />, <SiTypescript size={ICON_SIZE} />, <SiTailwindcss size={ICON_SIZE} />],
-            [<RiNextjsFill size={ICON_SIZE} />, <FaReact size={ICON_SIZE} />, <SiTypescript size={ICON_SIZE} />, <SiTailwindcss size={ICON_SIZE} />],
-            [<SiVite size={ICON_SIZE} />, <FaReact size={ICON_SIZE} />, <SiJavascript size={ICON_SIZE} />, <FaCss3 size={ICON_SIZE} />],
-            [<SiVite size={ICON_SIZE} />, <FaReact size={ICON_SIZE} />, <SiJavascript size={ICON_SIZE} />, <FaCss3 size={ICON_SIZE} />]
+            [
+                <RiNextjsFill key="nextjs" size={ICON_SIZE} />, 
+                <FaReact key="react" size={ICON_SIZE} />, 
+                <SiTypescript key="typescript" size={ICON_SIZE} />, 
+                <SiTailwindcss key="tailwind" size={ICON_SIZE} />
+            ],
+            [
+                <RiNextjsFill key="nextjs" size={ICON_SIZE} />, 
+                <FaReact key="react" size={ICON_SIZE} />, 
+                <SiTypescript key="typescript" size={ICON_SIZE} />, 
+                <SiTailwindcss key="tailwind" size={ICON_SIZE} />
+            ],
+            [
+                <SiVite key="vite" size={ICON_SIZE} />, 
+                <FaReact key="react" size={ICON_SIZE} />, 
+                <SiJavascript key="javascript" size={ICON_SIZE} />, 
+                <FaCss3 key="css3" size={ICON_SIZE} />
+            ],
+            [
+                <SiVite key="vite" size={ICON_SIZE} />, 
+                <FaReact key="react" size={ICON_SIZE} />, 
+                <SiJavascript key="javascript" size={ICON_SIZE} />, 
+                <FaCss3 key="css3" size={ICON_SIZE} />
+            ]
         ],
         liveUrls: [
             "https://infection-control.vercel.app/",
