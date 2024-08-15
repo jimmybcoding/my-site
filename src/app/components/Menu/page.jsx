@@ -1,19 +1,28 @@
 "use client"
+import { useState, useEffect } from 'react';
 import useResponsiveWidth from './useResposiveWidth.jsx';
 import HamburgerMenu from './hamburger.jsx';
 import AltMenu from './altMenu.jsx';
 
 const Nav = () => {
-
     const windowWidth = useResponsiveWidth();
+    const [hasMounted, setHasMounted] = useState(false);
 
-    return( 
-    windowWidth > 500 ?
-    <AltMenu />
-    :
-    <HamburgerMenu />       
-    )
-}
+    //prevents hydration error
+    useEffect(() => {
+        setHasMounted(true);
+    }, []);
 
-export default Nav
+    if (!hasMounted) {
+        return null;
+    }
+
+    return (
+        <>
+            {windowWidth > 500 ? <AltMenu /> : <HamburgerMenu />}
+        </>
+    );
+};
+
+export default Nav;
 
