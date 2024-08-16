@@ -12,13 +12,14 @@ const Projects = () => {
 
     return (
         <div className="min-h-screen bg-blue-500" ref={ref}>
-            <h1 
-                className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 py-5 ml-6 text-5xl text-white font-bold"
-                id="projects"
-            >
-                Projects
-            </h1>
-        
+            <div className="pt-10 pb-6 px-6">
+                <h1 
+                    className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 py-5 ml-6 text-5xl text-white font-bold"
+                    id="projects"
+                >
+                    Projects
+                </h1>
+            </div>
             <AnimatePresence>
                 {isInView && (
                     <MotionDiv

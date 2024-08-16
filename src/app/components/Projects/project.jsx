@@ -33,7 +33,7 @@ const Project = ({ title, description, skills, liveUrl, gitUrl, pic }) => (
         </div>
 
         {/* Right Column: Image */}
-        <div className="my-6 flex items-center justify-center">
+        <div className="my-6 flex items-center justify-center mx-auto">
             <Image 
                 src={pic}
                 alt={`Screenshot of my ${title} project`}

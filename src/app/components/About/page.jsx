@@ -3,9 +3,11 @@ import Image from "next/image";
 const About = () => {
   return (
     <section id="about" className="min-h-screen py-0 bg-gradient-to-r from-red-500 via-pink-500 to-purple-500">
-      <h1 className="ml-6 py-5 pr-5 text-5xl font-bold border-r-4 border-r-purple-500 animate-typing overflow-hidden whitespace-nowrap">
-        About
-      </h1>
+      <div className="pt-10 pb-6 px-6">
+        <h1 className="ml-6 py-5 pr-5 text-5xl font-bold border-r-4 border-r-purple-500 animate-typing overflow-hidden whitespace-nowrap">
+          About
+        </h1>
+      </div>
       <div className="w-4/5 mx-auto py-5 grid gap-6 grid-cols-2 sm:grid-cols-1">
         <div>
           <p className="py-10">
