@@ -25,7 +25,7 @@ const skillsData = [
 
 const Skills = () => {
     return (
-        <div className="container bg-fuchsia-800 min-h-screen" id="skills">
+        <div className="bg-purple-700 min-h-screen" id="skills">
             <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 py-5 ml-6 text-5xl text-white font-bold">
                 Skills
             </h1>
