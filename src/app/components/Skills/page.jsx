@@ -25,13 +25,16 @@ const skillsData = [
 
 const Skills = () => {
     return (
-        <div className="bg-purple-700 min-h-screen" id="skills">
-            <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 py-5 ml-6 text-5xl text-white font-bold">
+        <div className="bg-purple-700 min-h-screen flex flex-col" id="skills">
+        <div className="pt-10 pb-6 px-6">
+            <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 py-5 text-5xl text-white font-bold">
                 Skills
             </h1>
-            <h2 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5  ml-6 text-sm text-blue-500 font-bold">
+            <h2 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-sm text-blue-500 font-bold">
                 ...that thrill
             </h2>
+        </div>
+        <div className="flex-grow flex items-center justify-center">
             <div className="w-4/5 mx-auto text-center">
                 <ul className="grid grid-cols-4 justify-center gap-4 w-full sm:grid-cols-2">
                     {skillsData.map((skill, index) => (
@@ -45,6 +48,7 @@ const Skills = () => {
                 </ul>
             </div>
         </div>
+    </div>
     );
 };
 
