@@ -23,14 +23,14 @@ const Intro = () => {
 
   return (
     <div className="
-      w-full h-screen min-h-screen z-10 
+      w-full h-screen min-h-screen z-10
       bg-[url('/background.gif')] bg-cover 
       bg-no-repeat bg-center
     ">
       <div className={`
         ${domine.className} flex flex-col gap-4 
-        justify-center items-center w-4/5 min-w-72 
-        h-screen mx-auto text-3xl
+        justify-center items-center min-w-72 
+        h-screen mx-auto text-2xl sm:text-xl
       `}>
         <div className="text-4xl justify-self-start">
           Hi, I&apos;m James!
@@ -43,7 +43,7 @@ const Intro = () => {
           sizes="100vw"
           className="shadow-multiple rounded-md w-1/5 mb-6 sm:w-2/5"
         />
-        <div className="flex gap-4 w-4/5 justify-center">
+        <div className="flex gap-4 min-w-fit justify-center">
           <div className="skew-y-12 skew-x-6 flex-nowrap">
             I am a
           </div> 
