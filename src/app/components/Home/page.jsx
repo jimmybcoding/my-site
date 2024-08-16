@@ -32,7 +32,7 @@ const Intro = () => {
         justify-center items-center min-w-72 
         h-screen mx-auto text-2xl sm:text-xl
       `}>
-        <div className="text-4xl justify-self-start">
+        <div className="text-4xl">
           Hi, I&apos;m James!
         </div>
         <Image
