@@ -7,17 +7,8 @@ import ProjectCard from "./projectCard";
 const MotionDiv = motion.div;
 
 const Projects = () => {
-    const [showAnimation, setShowAnimation] = useState(false);
     const ref = useRef(null);
-    const isInView = useInView(ref, { threshold: 0 });
-
-    useEffect(() => {
-        if (isInView) {
-            setShowAnimation(true);
-        } else {
-            setShowAnimation(false);
-        }
-    }, [isInView]);
+    const isInView = useInView(ref, { threshold: 0, once: true });
 
     return (
         <div className="min-h-screen bg-blue-500" ref={ref}>
@@ -29,7 +20,7 @@ const Projects = () => {
             </h1>
         
             <AnimatePresence>
-                {showAnimation && (
+                {isInView && (
                     <MotionDiv
                         className="w-4/5 mx-auto my-6"
                         initial={{ opacity: 0 }}
@@ -37,9 +28,8 @@ const Projects = () => {
                             scale: [0, 0.25, 0.5, 0.75, 1],
                             opacity: [0, 0.25, 0.5, 0.75, 1],
                         }}
-                        exit={{ opacity: 0 }}
                         transition={{ 
-                            duration: 1.5,
+                            duration: 2.0,
                             ease: "linear"
                         }}
                     >

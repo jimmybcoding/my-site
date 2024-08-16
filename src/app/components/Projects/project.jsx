@@ -40,7 +40,7 @@ const Project = ({ title, description, skills, liveUrl, gitUrl, pic }) => (
                 height={100}
                 width={100}
                 sizes="100vw"
-                className="w-full max-h-[400px] rounded-2xl"
+                className="w-full sm:w-4/5 max-h-[400px] rounded-2xl"
             />
         </div> 
     </div>

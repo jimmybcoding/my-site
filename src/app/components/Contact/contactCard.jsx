@@ -19,11 +19,11 @@ const ContactCard = ({ handleOpenEmailModal }) => {
                 <p>Let&apos;s Connect!</p>
                 <p className="">Email: jameskbarbour1@gmail.com</p>
                 <button 
-                className="my-6 p-4 text-center font-mono border-2 border-white border-dashed text-white hover:text-black"
+                className=" sm:min-w-fit my-6 p-4 text-center font-mono border-2 border-white border-dashed text-white hover:text-black"
                 onClick={handleOpenEmailModal}
                 >Shoot me a message</button>
             </div>
-            <div className="m-3 self-center bg-black text-white font-mono pl-32 pt-12 pr-1 pb-5 skew-y-2"> 
+            <div className="m-3 self-center bg-black text-white font-mono pl-32 pt-12 pr-1 pb-5 skew-y-2 sm:pl-8"> 
                 <Image
                 src="/maisy.jpg"
                 alt="my apricot coloured baby, the GOAT puppy. This is a service dog and sadly the service she provides is yapping."
