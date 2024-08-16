@@ -48,8 +48,8 @@ const ProjectCard = () => {
         liveUrls: [
             "https://infection-control.vercel.app/",
             "https://wordle-nextjs-six.vercel.app/",
-            "https://third-project-url.com",
-            "https://fourth-project-url.com"
+            "https://jimmybcoding.github.io/e-commerce-react/",
+            "https://jimmybcoding.github.io/HarryPotter/"
         ],
         gitUrls: [
             "https://github.com/jimmybcoding/infection-control",
