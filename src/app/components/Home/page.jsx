@@ -36,7 +36,7 @@ const Intro = () => {
           Hi, I&apos;m James!
         </div>
         <Image
-          src="/jimmy.jpg"
+          src="/profile.jpg"
           alt="Profile picture of James"
           height={100}
           width={100}
