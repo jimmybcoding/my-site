@@ -1,28 +1,23 @@
-"use client"
-import { useState, useEffect } from 'react';
-import useResponsiveWidth from './useResposiveWidth.jsx';
-import HamburgerMenu from './hamburger.jsx';
-import AltMenu from './altMenu.jsx';
+"use client";
+import { useState, useEffect } from "react";
+import useResponsiveWidth from "./useResposiveWidth.jsx";
+import HamburgerMenu from "./hamburger.jsx";
+import AltMenu from "./altMenu.jsx";
 
 const Nav = () => {
-    const windowWidth = useResponsiveWidth();
-    const [hasMounted, setHasMounted] = useState(false);
+  const windowWidth = useResponsiveWidth();
+  const [hasMounted, setHasMounted] = useState(false);
 
-    //prevents hydration error
-    useEffect(() => {
-        setHasMounted(true);
-    }, []);
+  //prevents hydration error
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
-    if (!hasMounted) {
-        return null;
-    }
+  if (!hasMounted) {
+    return null;
+  }
 
-    return (
-        <>
-            {windowWidth > 500 ? <AltMenu /> : <HamburgerMenu />}
-        </>
-    );
+  return <>{windowWidth > 500 ? <AltMenu /> : <HamburgerMenu />}</>;
 };
 
 export default Nav;
-

@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import Link from "next/link";
-import { indie_flower } from '@/app/fonts/fonts'; 
+import { indie_flower } from "@/app/fonts/fonts";
 
 const HamburgerMenu = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -69,7 +69,10 @@ const HamburgerMenu = () => {
                       </Link>
                     </li>
                     <li className="border-b border-gray-400 my-4 uppercase">
-                      <Link href="#projects" onClick={() => setIsNavOpen(false)}>
+                      <Link
+                        href="#projects"
+                        onClick={() => setIsNavOpen(false)}
+                      >
                         Projects
                       </Link>
                     </li>
@@ -87,6 +90,6 @@ const HamburgerMenu = () => {
       </div>
     </div>
   );
-}
+};
 
 export default HamburgerMenu;

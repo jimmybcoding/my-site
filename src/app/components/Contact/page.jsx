@@ -1,30 +1,31 @@
-"use client"
+"use client";
 
 import ContactCard from "./contactCard";
 import EmailModal from "./email";
 import { useState } from "react";
 
 const Contact = () => {
+  const [contactMe, setContactMe] = useState(false);
 
-    const [contactMe, setContactMe] = useState(false);
+  const handleOpenEmailModal = () => setContactMe(true);
 
-    const handleOpenEmailModal = () => setContactMe(true);
+  const handleCloseEmailModal = () => setContactMe(false);
 
-    const handleCloseEmailModal = () => setContactMe(false);
-
-    return(
+  return (
+    <>
+      {contactMe ? (
         <>
-        {contactMe ?
-        
-        <>
-            <EmailModal handleCloseEmailModal={handleCloseEmailModal} contactMe={contactMe} />
-            <ContactCard handleOpenEmailModal={handleOpenEmailModal} />
+          <EmailModal
+            handleCloseEmailModal={handleCloseEmailModal}
+            contactMe={contactMe}
+          />
+          <ContactCard handleOpenEmailModal={handleOpenEmailModal} />
         </>
-            : 
-            <ContactCard handleOpenEmailModal={handleOpenEmailModal} />
-        }
+      ) : (
+        <ContactCard handleOpenEmailModal={handleOpenEmailModal} />
+      )}
     </>
-    )
-}
+  );
+};
 
-export default Contact
+export default Contact;

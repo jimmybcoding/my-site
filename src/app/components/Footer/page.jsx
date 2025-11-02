@@ -8,22 +8,20 @@ const Footer = () => {
         <p className="border-b-2 border-slate-700 font-thin">
           Designed by Jimmy B
         </p>
-        <Link 
-        href='https://github.com/jimmybcoding?tab=repositories'
-        target="_blank"
+        <Link
+          href="https://github.com/jimmybcoding?tab=repositories"
+          target="_blank"
         >
-          <FaGithub 
-           className="mx-auto h-6 w-6" 
-           title="Github"
-           aria-label="Github"
+          <FaGithub
+            className="mx-auto h-6 w-6"
+            title="Github"
+            aria-label="Github"
           />
         </Link>
-        <p>
-          2024
-        </p> 
+        <p>2024</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

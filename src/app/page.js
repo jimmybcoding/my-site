@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <Intro /> 
+      <Intro />
       <About />
       <Skills />
       <Projects />
