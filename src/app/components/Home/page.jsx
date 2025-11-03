@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { domine } from "@/app/fonts/fonts";
 
-
 const Intro = () => {
   const strings = [
     "Software Developer",
