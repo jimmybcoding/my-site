@@ -11,15 +11,17 @@ const Project = ({ title, description, skills, liveUrl, gitUrl, pic }) => (
       <p className="mb-6">{description}</p>
       <div className="flex gap-2 justify-center mb-6">{skills}</div>
       <div className="flex gap-10 justify-center">
-        <Link
-          href={liveUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="border-2 border-blue-500 rounded-lg p-2 hover:bg-blue-500 hover:text-white transition-colors"
-          aria-label={`Visit live site for ${title}`}
-        >
-          Visit Site
-        </Link>
+        {liveUrl && (
+          <Link
+            href={liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-2 border-blue-500 rounded-lg p-2 hover:bg-blue-500 hover:text-white transition-colors"
+            aria-label={`Visit live site for ${title}`}
+          >
+            Visit Site
+          </Link>
+        )}
         <Link
           href={gitUrl}
           target="_blank"

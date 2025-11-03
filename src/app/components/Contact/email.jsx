@@ -35,17 +35,17 @@ const EmailModal = ({ contactMe, handleCloseEmailModal }) => {
       <div
         className={`${indie_flower.className} fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50`}
       >
-        <div className="relative w-full max-w-md p-8 bg-pink-600 rounded-md shadow-lg">
+        <div className="relative w-full max-w-md p-8 bg-purple-800 rounded-md shadow-lg">
           <button
             className="absolute top-2 right-2 p-2 text-gray-600 hover:text-gray-800 transition-colors"
             onClick={() => handleCloseEmailModal(false)}
             aria-label="Close Modal"
           >
             <svg
-              className="h-8 w-8"
+              className="h-8 w-8 hover:scale-110"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="currentColor"
+              stroke="black"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"

@@ -11,10 +11,13 @@ const Projects = () => {
   const isInView = useInView(ref, { threshold: 0, once: true });
 
   return (
-    <div className="min-h-screen bg-blue-500" ref={ref}>
+    <div
+      className="flex flex-col min-h-screen bg-gradient-to-b from-fuchsia-800 to-black via-purple-900"
+      ref={ref}
+    >
       <div className="pt-10 pb-6 px-6">
         <h1
-          className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 py-5 ml-6 text-5xl text-white font-bold"
+          className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-purple-500 pr-5 py-5 ml-6 text-5xl text-white font-bold"
           id="projects"
         >
           Projects

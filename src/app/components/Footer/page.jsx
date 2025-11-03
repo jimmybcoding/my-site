@@ -3,23 +3,19 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="relative flex flex-col justify-center w-full h-20 mt-5 text-center bg-slate-800 text-slate-100">
-      <div className="absolute bottom-0 inset-x-0">
-        <p className="border-b-2 border-slate-700 font-thin">
-          Designed by Jimmy B
-        </p>
-        <Link
-          href="https://github.com/jimmybcoding?tab=repositories"
-          target="_blank"
-        >
-          <FaGithub
-            className="mx-auto h-6 w-6"
-            title="Github"
-            aria-label="Github"
-          />
-        </Link>
-        <p>2024</p>
-      </div>
+    <div className="flex flex-col justify-end items-center w-full h-20 bg-black text-slate-100 pb-4">
+      <p className="font-thin">Designed by Jimmy B</p>
+      <Link
+        href="https://github.com/jimmybcoding?tab=repositories"
+        target="_blank"
+      >
+        <FaGithub
+          className="mx-auto h-6 w-6"
+          title="Github"
+          aria-label="Github"
+        />
+      </Link>
+      © {new Date().getFullYear()}
     </div>
   );
 };

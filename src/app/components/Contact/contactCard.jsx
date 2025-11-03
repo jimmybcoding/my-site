@@ -4,10 +4,10 @@ import Image from "next/image";
 
 const ContactCard = ({ handleOpenEmailModal }) => {
   return (
-    <div className="container bg-white text-black">
+    <div className="flex flex-col min-h-screen text-white bg-black">
       <div className="pt-10 pb-6 px-6">
         <h1
-          className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black pr-5 mt-6 my-6 ml-6 text-5xl font-bold"
+          className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-purple-500 pr-5 pt-6 ml-6 text-5xl font-bold"
           id="contact"
         >
           Contact

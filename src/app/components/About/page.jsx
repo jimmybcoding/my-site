@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen py-0 bg-gradient-to-r from-red-500 via-pink-500 to-purple-500"
+      className="flex flex-col min-h-screen bg-gradient-to-b from-indigo-950 via-purple-900 to-purple-800"
     >
       <div className="pt-10 pb-6 px-6">
         <h1 className="ml-6 py-5 pr-5 text-5xl font-bold border-r-4 border-r-purple-500 animate-typing overflow-hidden whitespace-nowrap">

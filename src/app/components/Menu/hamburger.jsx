@@ -33,17 +33,17 @@ const HamburgerMenu = () => {
                   className="fixed inset-0 z-40 bg-black bg-opacity-50"
                   onClick={handleOverlayClick}
                 ></div>
-                <div className="fixed inset-y-0 left-0 z-50 w-64 bg-pink-600 rounded-md shadow-lg p-8">
+                <div className="fixed inset-y-0 left-0 z-50 w-64 bg-gradient-to-b from-purple-800 to-indigo-950 opacity-80 rounded-md shadow-lg p-8">
                   <div
                     className="absolute top-2 right-2 p-2 text-gray-600 hover:text-gray-800 transition-colors cursor-pointer"
                     onClick={() => setIsNavOpen(false)}
                     aria-label="Close Menu"
                   >
                     <svg
-                      className="h-8 w-8"
+                      className="h-8 w-8 hover:scale-110"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="currentColor"
+                      stroke="black"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -53,22 +53,22 @@ const HamburgerMenu = () => {
                     </svg>
                   </div>
                   <ul className="flex flex-col items-start justify-between min-h-[250px] text-white">
-                    <li className="border-b border-gray-400 my-4 uppercase">
+                    <li className="border-b border-gray-400 my-4 uppercase hover:scale-110">
                       <Link href="/" onClick={() => setIsNavOpen(false)}>
                         Home
                       </Link>
                     </li>
-                    <li className="border-b border-gray-400 my-4 uppercase">
+                    <li className="border-b border-gray-400 my-4 uppercase hover:scale-110">
                       <Link href="#about" onClick={() => setIsNavOpen(false)}>
                         About
                       </Link>
                     </li>
-                    <li className="border-b border-gray-400 my-4 uppercase">
+                    <li className="border-b border-gray-400 my-4 uppercase hover:scale-110">
                       <Link href="#skills" onClick={() => setIsNavOpen(false)}>
                         Skills
                       </Link>
                     </li>
-                    <li className="border-b border-gray-400 my-4 uppercase">
+                    <li className="border-b border-gray-400 my-4 uppercase hover:scale-110">
                       <Link
                         href="#projects"
                         onClick={() => setIsNavOpen(false)}
@@ -76,7 +76,7 @@ const HamburgerMenu = () => {
                         Projects
                       </Link>
                     </li>
-                    <li className="border-b border-gray-400 my-4 uppercase">
+                    <li className="border-b border-gray-400 my-4 uppercase hover:scale-110">
                       <Link href="#contact" onClick={() => setIsNavOpen(false)}>
                         Contact
                       </Link>
