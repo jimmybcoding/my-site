@@ -37,7 +37,7 @@ const skillsData = [
 const Skills = () => {
   return (
     <div
-      className="flex flex-col min-h-screen bg-gradient-to-b from-purple-800 via-purple-600 to-fuchsia-800"
+      className="flex flex-col min-h-screen bg-gradient-to-b from-purple-800 via-pink-600 to-blue-800"
       id="skills"
     >
       <div className="pt-10 pb-6 px-6">

@@ -12,7 +12,7 @@ const Projects = () => {
 
   return (
     <div
-      className="flex flex-col min-h-screen bg-gradient-to-b from-fuchsia-800 to-black via-purple-900"
+      className="flex flex-col min-h-screen bg-gradient-to-b from-blue-800 to-black via-purple-900"
       ref={ref}
     >
       <div className="pt-10 pb-6 px-6">

@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Project = ({ title, description, skills, liveUrl, gitUrl, pic }) => (
-  <div className="container mx-auto flex flex-col lg:flex-row lg:gap-8 items-center text-blue-700">
+  <div className="container mx-auto flex flex-col lg:flex-row lg:gap-8 items-center text-slate-200">
     {/* Left Column: Content */}
-    <div className="lg:w-1/2 sm:w-full border-2 border-yellow-500 rounded-xl my-6 p-6 bg-yellow-300">
-      <h2 className="font-bold text-xl border-b-yellow-500 border-b-2 mb-4 w-fit">
+    <div className="lg:w-1/2 sm:w-full border-2 border-blue-500 rounded-xl my-6 p-6 bg-indigo-950">
+      <h2 className="font-bold text-xl border-b-blue-500 border-b-2 mb-4 w-fit">
         {title}
       </h2>
       <p className="mb-6">{description}</p>
