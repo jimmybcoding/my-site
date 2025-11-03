@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { domine } from "@/app/fonts/fonts";
 
+
 const Intro = () => {
   const strings = [
     "Software Developer",
@@ -48,10 +49,11 @@ const Intro = () => {
         <Image
           src="/profile.jpg"
           alt="Profile picture of James"
-          height={100}
-          width={100}
+          height={160}
+          width={160}
           sizes="100vw"
-          className="shadow-multiple rounded-md w-1/5 mb-6 sm:w-2/5"
+          className="shadow-multiple rounded-md object-cover"
+          priority
         />
         <div className="flex gap-4 min-w-fit justify-center">
           <div className="skew-y-12 skew-x-6 flex-nowrap">I am a</div>
