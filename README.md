@@ -1,1 +1,34 @@
-My personal programming portfolio. Built in NextJs. I have been learning framer motion, so I used it for the animations. I used emailjs in the contact component. I wanted to incorporate responsive design, the menu will display as a hamburger menu on mobile and a top nav bar on larger screens. I also used an approach that easily allows "scaling up" as I add skills and projects. The site is hosted on vercel here: https://james-barbour.vercel.app/
+# James Barbour – Personal Portfolio
+ 
+My personal programming portfolio built with **Next.js**, showcasing my projects, skills, and contact information.
+
+## Features
+
+- **Responsive Design** 
+
+  - Hamburger menu on mobile 
+
+  - Top navigation bar on larger screens
+ 
+- **Contact Form** 
+
+  - Built with **EmailJS** for direct email submissions
+ 
+- **Scalable Architecture** 
+
+  - Easy to add new skills, projects, and sections as the portfolio grows
+
+ 
+- **Hosting** 
+
+  - Deployed on **Vercel**: [https://james-barbour.vercel.app/](https://james-barbour.vercel.app/)
+
+ 
+
+## Tech Stack
+
+- **Frontend**: Next.js, React 
+
+- **Styling & Layout**: TailwindCSS, responsive design principles 
+
+- **Email Integration**: EmailJS
