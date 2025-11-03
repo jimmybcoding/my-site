@@ -14,7 +14,7 @@ const EmailModal = ({ contactMe, handleCloseEmailModal }) => {
 
     try {
       const result = await emailjs.sendForm(
-        "service_2zwbc7b",
+        "service_q53no8q",
         "template_yh9r14i",
         form.current,
         "TRW6b4IexpjJSyK4A",
