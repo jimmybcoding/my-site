@@ -5,7 +5,7 @@ import Image from "next/image";
 const ContactCard = ({ handleOpenEmailModal }) => {
   return (
     <div className="flex flex-col min-h-screen text-white bg-black">
-      <div className="pt-10 pb-6 px-6">
+      <div className="pt-10 pb-6">
         <h1
           className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-purple-500 pr-5 pt-6 ml-6 text-5xl font-bold"
           id="contact"
@@ -13,22 +13,22 @@ const ContactCard = ({ handleOpenEmailModal }) => {
           Contact
         </h1>
       </div>
-      <div className="sm:flex-col flex gap-3 align-middle w-4/5 mx-auto">
-        <div className="sm:self-center sm:my-6 w-2/5 min-w-fit p-4 self-start bg-gradient-to-r from-red-500 via-pink-500 to-purple-300">
-          <h1 className="text-3xl text-black font-light">James Barbour</h1>
+      <div className="flex flex-col items-center gap-5 w-4/5 mx-auto">
+        <div className="p-4">
+          <h1 className="text-3xl text-blue-500 font-light">James Barbour</h1>
           <p>Let&apos;s Connect!</p>
           <p className="">Email: jameskbarbour1@gmail.com</p>
           <button
-            className=" sm:min-w-fit my-6 p-4 text-center font-mono border-2 border-white border-dashed text-white hover:text-black"
+            className="my-6 p-4 text-center font-mono border-2 border-blue-500 border-dashed text-white hover:text-blue-500"
             onClick={handleOpenEmailModal}
           >
             Shoot me a message
           </button>
         </div>
-        <div className="m-3 self-center bg-black text-white font-mono pl-32 pt-12 pr-1 pb-5 skew-y-2 sm:pl-8">
+        <div className=" bg-black text-white font-mono">
           <Image
             src="/maisy.jpg"
-            alt="my apricot coloured baby, the GOAT puppy. This is a service dog and sadly the service she provides is yapping."
+            alt="my apricot coloured baby, the GOAT puppy."
             width={100}
             height={100}
             sizes="100vw"
