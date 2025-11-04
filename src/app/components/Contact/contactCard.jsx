@@ -15,11 +15,11 @@ const ContactCard = ({ handleOpenEmailModal }) => {
       </div>
       <div className="flex flex-col items-center gap-5 mx-auto">
         <div className="p-4">
-          <h1 className="text-3xl text-blue-500 font-light">James Barbour</h1>
+          <h1 className="text-3xl text-blue-500 font-mono">James Barbour</h1>
           <p>Let&apos;s Connect!</p>
           <p className="">Email: jameskbarbour1@gmail.com</p>
           <button
-            className="my-6 p-4 text-center font-mono border-2 border-blue-500 border-dashed text-white hover:text-blue-500"
+            className="my-6 px-2 py-4 text-center font-mono border-2 border-blue-500 border-dashed text-white hover:text-blue-500"
             onClick={handleOpenEmailModal}
           >
             Shoot me a message
