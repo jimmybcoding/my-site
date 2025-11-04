@@ -7,13 +7,13 @@ const ContactCard = ({ handleOpenEmailModal }) => {
     <div className="flex flex-col min-h-screen text-white bg-black">
       <div className="pt-10 pb-6">
         <h1
-          className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-purple-500 pr-5 pt-6 ml-6 text-5xl font-bold"
+          className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-purple-500 py-5 ml-6 text-5xl text-white font-bold"
           id="contact"
         >
           Contact
         </h1>
       </div>
-      <div className="flex flex-col items-center gap-5 w-4/5 mx-auto">
+      <div className="flex flex-col items-center gap-5 mx-auto">
         <div className="p-4">
           <h1 className="text-3xl text-blue-500 font-light">James Barbour</h1>
           <p>Let&apos;s Connect!</p>

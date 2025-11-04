@@ -7,7 +7,7 @@ const About = () => {
       className="flex flex-col min-h-screen bg-gradient-to-b from-indigo-950 via-purple-900 to-purple-800"
     >
       <div className="pt-10 pb-6 px-6">
-        <h1 className="ml-6 py-5 pr-5 text-5xl font-bold border-r-4 border-r-purple-500 animate-typing overflow-hidden whitespace-nowrap">
+        <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-purple-500 py-5 ml-6 text-5xl text-white font-bold">
           About
         </h1>
       </div>

@@ -41,10 +41,10 @@ const Skills = () => {
       id="skills"
     >
       <div className="pt-10 pb-6 px-6">
-        <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-purple-500 pr-5 py-5 text-5xl text-white font-bold">
+        <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-purple-500 py-5 ml-6 text-5xl text-white font-bold">
           Skills
         </h1>
-        <h2 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-purple-500 pr-5 text-sm text-white font-bold">
+        <h2 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-purple-500 py-5 ml-6 text-sm text-white font-bold">
           ...that thrill
         </h2>
       </div>
