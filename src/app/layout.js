@@ -5,7 +5,7 @@ import GlobalParticles from "./particles";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "James Barbour",
+  title: "James K Barbour",
   description: "My Site",
 };
 
